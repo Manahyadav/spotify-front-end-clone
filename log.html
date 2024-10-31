@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="spotify/logo.png" />
+    <title>Spotify Login or Register</title>
+    <link rel="stylesheet" href="log.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-register-form">
+            <div class="logo">
+                <img src="/spotify/logo.png" alt="Spotify Logo">
+            </div>
+            <h2>Login to Spotify</h2>
+            <form id="loginForm">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Log In</button>
+            </form>
+            <div class="separator">or</div>
+            <button class="btn-social">Continue with Facebook</button>
+            <button class="btn-social1">Continue with Google</button>
+            <p class="signup-link">Don't have an account? <a href="#" id="showRegisterForm">Sign Up</a></p>
+        </div>
+        <div class="register-form hidden">
+            <div class="logo">
+                <img src="spotify-logo.png" alt="Spotify Logo">
+            </div>
+            <h2>Create your Spotify Account</h2>
+            <form id="registerForm">
+                <input type="text" placeholder="Username" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p class="login-link">Already have an account? <a href="#" id="showLoginForm">Log In</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

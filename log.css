@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    background-color: #282828;
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+    background-image:  linear-gradient(180deg, transparent, rgba(0, 0, 0, .5)), linear-gradient(78.87deg, #b00d6e -3.32%, #004695 112.02%);
+}
+
+.logo img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1DB954;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.btn-social {
+    background-color: #3b5998; 
+    margin: 5px 0;
+}
+
+.btn-social1 {
+    background-color: #ffffff; 
+    color: rgb(84, 83, 83);
+    margin: 5px 0;
+}
+
+.separator {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+.hidden {
+    display: none;
+}
+
+.signup-link, .login-link {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.signup-link a, .login-link a {
+    color: #1DB954;
+    text-decoration: none;
+}

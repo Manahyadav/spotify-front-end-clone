@@ -1,0 +1,170 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #121212;
+    color: #FFFFFF;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #000000;
+    padding: 15px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: #1DB954;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #1DB954;
+}
+
+/* Hero Section */
+.hero {
+    background: url('premium-hero-image.jpg') no-repeat center center/cover;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #1DB954;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #1AA34A;
+}
+
+/* Benefits Section */
+.benefits {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.benefit-columns {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.benefit {
+    background-color: #181818;
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    color: #FFFFFF;
+}
+
+.benefit h3 {
+    color: #1DB954;
+    margin-bottom: 10px;
+}
+
+.benefit p {
+    color: #B3B3B3;
+}
+
+/* Pricing Section */
+.pricing {
+    background-color: #181818;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.pricing-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.plan {
+    background-color: #292929;
+    padding: 20px;
+    border-radius: 8px;
+    width: 220px;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+.plan h3 {
+    color: #1DB954;
+    margin-bottom: 10px;
+}
+
+.plan p {
+    color: #FFFFFF;
+    margin: 5px 0;
+}
+
+.plan-button {
+    background-color: #1DB954;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.plan-button:hover {
+    background-color: #1AA34A;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 50px 20px;
+}
+.social-icon{
+    text-decoration: none;
+}

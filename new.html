@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="spotify/logo.png" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <!-- sidebar -->
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <input type="checkbox" id="check" style="display: none;">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#"><label for="checki">Search</label></a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option nav-option">
+                        <img src="spotify/library_icon.png" alt="">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">Let's find some podcasts to follow</p>
+                        <p class="box-p2">We'll keep you updated on new episodes</p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- main-content -->
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="spotify/backward_icon.png" alt="">
+                    <img src="spotify/forward_icon.png" class="hide">
+                </div>
+                <div class="search">
+                    <input type="text" id="checki" placeholder=" Search here">
+                </div>
+               <div class="sticky-nav-options">
+                <button class="badge nav-item hide"><a href="explore.html" style="color: black;">Explore Premium</a></button>
+                <button class="badge nav-item dark-badge"><a href="download.html"><i class="fa-regular fa-circle-down" style="margin-right: 5px;"></i>Install App</a></button>
+                <a href="log.html"><i class="fa-regular fa-user nav-item"></i></a>
+               </div>
+            </div>
+            <div class="cards">
+                <!-- Your existing card content here -->
+                <h2>Recently Played</h2>
+                <div class="cards-container">
+                    <div class="card" id="playCard">
+                        <img src="spotify/card1img.jpeg" class="card-img" id="card1">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most played...</p>
+                        <source src="/spotify/Starboy(PagalWorld).mp3" type="audio/ogg">
+                    </div>
+                </div>
+
+                <h2>Trending now near you</h2>
+                <div class="cards-container">
+                    <div class="card" >
+                        <img src="spotify/card2img.jpeg" class="card-img">
+                        <p class="card-title">Mahiye jinna sohna</p>
+                        <p class="card-info">Your daily updates of the most played...</p>
+                    </div>
+                    <div class="card">
+                        <img src="spotify/card3img.jpeg" class="card-img">
+                        <p class="card-title">Mere Paas Tum Ho</p>
+                        <p class="card-info">Your daily updates of the most played...</p>
+                    </div>
+                    <div class="card">
+                        <img src="spotify/card4img.jpeg" class="card-img">
+                        <p class="card-title">Naa Ready</p>
+                        <p class="card-info">Your daily updates of the most played...</p>
+                    </div>
+                    <div class="card">
+                        <img src="spotify/card3img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most played...</p>
+                    </div>
+                    <div class="card">
+                        <img src="spotify/card4img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most played...</p>
+                    </div>
+                </div>
+
+                <h2>Featured Charts</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="spotify/card5img.jpeg" class="card-img">
+                        <p class="card-title">Top Songs - Global</p>
+                        <p class="card-info">Your daily updates of the most played...</p>
+                    </div>
+                    <div class="card">
+                        <img src="spotify/card6img.jpeg" class="card-img">
+                        <p class="card-title">Top Songs - India</p>
+                        <p class="card-info">Your daily updates of the most played...</p>
+                    </div>
+                    <div class="card">
+                        <img src="spotify/card1img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most played...</p>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- music-player -->
+        <div class="music-player">
+            <div class="album">
+                <!-- Optional album cover image or placeholder -->
+            </div>
+
+            <div class="player">
+                <!-- <div class="player-controls">
+                    <img src="spotify/player_icon1.png" class="player-control-icon" alt="Previous">
+                    <img src="spotify/player_icon2.png" class="player-control-icon" alt="Play/Pause">
+                    <img src="spotify/player_icon3.png" class="player-control-icon" style="opacity: 1; height: 2rem;" alt="Next">
+                    <img src="spotify/player_icon4.png" class="player-control-icon" alt="Repeat">
+                    <img src="spotify/player_icon5.png" class="player-control-icon" alt="Shuffle">
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time">00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar" step="1">
+                    <span class="tot-time">03:33</span>
+                </div> -->
+                <!-- Audio element -->
+
+                <audio id="audio-player" controls>
+                    <source  src="/spotify/The-Spectre_320(PagalWorld).mp3" type="audio/mpeg">
+                    <!--<source   src="/spotify//Starboy(PagalWorld).mp3" type="audio/mpeg"> -->
+                   
+                </audio>
+            </div>
+
+
+
+            <div class="controls">
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="new.js"></script>
+</body>
+
+</html>
